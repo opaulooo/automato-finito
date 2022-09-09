@@ -1,6 +1,6 @@
 package Interface;
 
-import Exercicios.LetraA;
+import Exercicios.*;
 
 public class UI extends javax.swing.JFrame {
     public UI() {
@@ -114,6 +114,11 @@ public class UI extends javax.swing.JFrame {
                 //EXERCICIO A
                 LetraA letraA = new LetraA(jtp_input.getText());
                 jtp_console.setText(letraA.resolverAutomato());
+                break;
+            }
+            case 1:{
+                LetraB letraB = new LetraB(jtp_input.getText());
+                jtp_console.setText(letraB.resolverAutomato());
                 break;
             }
         }
