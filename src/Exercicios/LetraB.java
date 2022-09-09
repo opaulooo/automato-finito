@@ -14,7 +14,7 @@ public class LetraB implements Automato {
 
     @Override
     public String resolverAutomato() {
-        this.console = Constants.getEnumExerA() + Constants.getLabelSaida() + this.estado0();
+        this.console = Constants.getEnumExerB() + Constants.getLabelSaida() + this.estado0();
         return this.console;
     }
     
