@@ -21,14 +21,12 @@ public class LetraB implements Automato {
     private String estado0() {
         if(this.index < this.cadeia.length()){
             char c = this.cadeia.charAt(this.index);
-            if(c == 'a'){
-                this.index++;
+            this.index++;
+            
+            if(c == 'a')
                 return  c + ", q0 -> q1\n" + this.estado1();
-            }
-            else if(c == 'b') {
-                this.index++;
+            else if(c == 'b') 
                 return  c + ", q0 -> q0\n" + this.estado0();
-            }
             else
                 return "Erro em q0 (" + c + ")\n" + Constants.getLabelCondicaoNaoAceita();
         } else return "Erro em q0\n" + Constants.getLabelCondicaoNaoAceita();
