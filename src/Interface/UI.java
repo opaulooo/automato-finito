@@ -142,8 +142,21 @@ public class UI extends javax.swing.JFrame {
                 break;
             }
             case 1:{
+                //EXERCICIO B
                 LetraB letraB = new LetraB(jtp_input.getText());
                 jtp_console.setText(letraB.resolverAutomato());
+                break;
+            }
+            case 4:{
+                //EXERCICIO E
+                LetraE letraE = new LetraE(jtp_input.getText());
+                jtp_console.setText(letraE.resolverAutomato());
+                break;
+            }
+            case 7:{
+                //EXERCICIO E
+                LetraH letraH = new LetraH(jtp_input.getText());
+                jtp_console.setText(letraH.resolverAutomato());
                 break;
             }
         }
