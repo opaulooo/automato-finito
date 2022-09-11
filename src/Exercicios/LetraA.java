@@ -13,7 +13,7 @@ public class LetraA implements Automato {
 
     @Override
     public String resolverAutomato() {
-    	this.console = Constants.getEnumExerB() + Constants.getLabelSaida() + this.estado0();
+    	this.console = Constants.getEnumExerA() + Constants.getLabelSaida() + this.estado0();
         return this.console;
     }
     
@@ -40,7 +40,7 @@ public class LetraA implements Automato {
             if (c == 'a') {
             	return  c + ", q1 -> q1\n" + this.estado1();
             } else if (c == 'b') {
-            	return  c + ", q1 -> q2\n" + this.estado3();
+            	return  c + ", q1 -> q2\n" + this.estado2();
             } else {
             	return "Erro em q1 (" + c + ")\n" + Constants.getLabelCondicaoNaoAceita();
             }
